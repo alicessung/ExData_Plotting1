@@ -19,5 +19,5 @@ legend("topright",lty=1,col=c("Black","red","blue"),legend=c("Sub_metering_1", "
 plot(strptime(data$DateTime, "%d/%m/%Y %H:%M:%S"),data$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 
 # save as png
-dev.copy(png,"plot4.png")
+dev.copy(png,"plot4.png",width = 480, height = 480)
 dev.off()
